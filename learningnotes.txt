@@ -1,0 +1,6 @@
+working folder: \Document\IT Yin\Fullstack17355\Chatapp
+test version : Fullstack17355 % cd Chatapp >node --version
+test npm: npm --v
+
+creat package: npm init --y
+install expressjs: npm install --save express
