@@ -21,36 +21,43 @@
         <br />
         <input id="name" class="form-control" placeholder="Enter your Name" />
         <br />
-        <button id="send" class="btn btn-success">Send</button>
+        <textarea
+          id="message"
+          class="form-control"
+          placeholder="Message"
+        ></textarea>
+        <br />
+        <button id="send" class="btn btn-success">Send Message</button>
       </div>
-    </div>
-    <div id="messages"></div>
+      <div id="messages"></div>
 
-    <script>
-      $(() => {
-        console.log("Page loaded by Nutnaree");
-        $("#send").click(() => {
-          addMessage({
-            name: "Johnson",
-            message: "Hello World from Wells College!",
+      <script>
+        $(() => {
+          console.log("Page loaded by Nutnaree");
+          $("#send").click(() => {
+            var message = {
+              name: $("#name").val(),
+              message: $("#message").val(),
+            };
+            postMessage(message);
           });
+          getMessages();
         });
-
-        getMessages();
-      });
-      function addMessage(message) {
-        $("#messages").append(`${message.name}:&nbsp ${message.message}<hr />`);
-      }
-      //function addMessage(message) {
-      // $("#messages").append(
-      // `<h4> ${message.name} </h4> <p> ${message.message}<p>`);}
-
-      function getMessages() {
-        $.get("http://localhost:3010/messages", (data) => {
-          console.log(data);
-          data.forEach(addMessage);
-        });
-      }
-    </script>
+        function addMessage(message) {
+          $("#messages").append(
+            `<h5>${message.name}:&nbsp ${message.message}<h5><hr/>`
+          );
+        }
+        function getMessages() {
+          $.get("http://localhost:3010/messages", (data) => {
+            console.log(data);
+            data.forEach(addMessage);
+          });
+        }
+        function postMessage(message) {
+          $.post("http://localhost:3010/messages", message);
+        }
+      </script>
+    </div>
   </body>
 </html>

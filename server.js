@@ -6,10 +6,10 @@ const port = process.env.PORT || 3010
 
 app.use(express.static(__dirname))
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:false}))
 
 var messages = [
     {name: "John", message: "Hello from Sydney"},
-    {name: "Jane", message: "How are you"},
     {name: "Rose", message: "Nice to see you"}
     ]
 
