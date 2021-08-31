@@ -1,0 +1,38 @@
+.form-control {
+  display: block;
+  background-color: #007bff12;
+  border: 1px solid #939597;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #e8a798;
+  color: rgb(148, 48, 48);
+  border-color: #c28484;
+  margin: center;
+}
+.jumbotron {
+  background-color: #ffece5;
+  border-radius: 10px;
+  border-color: rgb(150, 48, 48);
+}
+#name,
+#message {
+  background-color: #fff9e5;
+}
+#messages {
+  color: #556068;
+}
+.display-4 {
+  font-weight: 400;
+  color: rgb(105, 101, 101);
+}
+.sendname {
+  color: rgb(153, 74, 69);
+}
+hr {
+  border: 1px solid rgb(153, 142, 142);
+}
+body {
+  background-image: url("bg2.jpg");
+}

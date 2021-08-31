@@ -2,5 +2,20 @@ working folder: \Document\IT Yin\Fullstack17355\Chatapp
 test version : Fullstack17355 % cd Chatapp >node --version
 test npm: npm --v
 
-creat package: npm init --y
+create package: npm init --y
 install expressjs: npm install --save express
+start to run: node server.js
+
+git branch -M master
+git remote set-url origin https://github.com/wellsjohn220/mychatapp.git
+git push -u origin master
+
+delete origin: git remote set-url origin https://github.com/wellsjohn220/mychatapp.git
+
+{"name": "James", "message": "What about your mission now."}
+
+npm install --save body-parser
+
+npm install --save socket.io
+
+npm install --save mongoose
