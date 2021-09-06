@@ -52,9 +52,6 @@
               message: $("#message").val(),
             };
 
-            const d = new Date();
-            document.getElementById("demo").innerHTML = d;
-
             postMessage(message);
           });
           getMessages();
@@ -65,7 +62,7 @@
           );
         }
         function getMessages() {
-          //$.get("http://localhost:3010/messages", (data) => {
+          // $.get("http://localhost:3010/messages", (data) => {
           $.get(
             "https://whispering-dawn-76872.herokuapp.com/messages",
             (data) => {
@@ -75,7 +72,7 @@
           );
         }
         function postMessage(message) {
-          //$.post("http://localhost:3010/messages", message);
+          // $.post("http://localhost:3010/messages", message);
           $.post(
             "https://whispering-dawn-76872.herokuapp.com/messages",
             message

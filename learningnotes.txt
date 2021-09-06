@@ -12,6 +12,7 @@ git push -u origin master
 
 delete origin: git remote set-url origin https://github.com/nutnaree-u/mychatapp.git
 
+
 npm install --save body-parser
 
 npm install --save socket.io
