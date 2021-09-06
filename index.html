@@ -51,6 +51,7 @@
               name: $("#name").val(),
               message: $("#message").val(),
             };
+
             const d = new Date();
             document.getElementById("demo").innerHTML = d;
 
@@ -74,8 +75,11 @@
           );
         }
         function postMessage(message) {
-          $.post("http://localhost:3010/messages", message);
-          //$.post("https://whispering-dawn-76872.herokuapp.com/messages",message);
+          //$.post("http://localhost:3010/messages", message);
+          $.post(
+            "https://whispering-dawn-76872.herokuapp.com/messages",
+            message
+          );
         }
       </script>
     </div>

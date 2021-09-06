@@ -7,12 +7,10 @@ install expressjs: npm install --save express
 start to run: node server.js
 
 git branch -M master
-git remote set-url origin https://github.com/wellsjohn220/mychatapp.git
+git remote set-url origin https://github.com/nutnaree-u/mychatapp.git
 git push -u origin master
 
-delete origin: git remote set-url origin https://github.com/wellsjohn220/mychatapp.git
-
-{"name": "James", "message": "What about your mission now."}
+delete origin: git remote set-url origin https://github.com/nutnaree-u/mychatapp.git
 
 npm install --save body-parser
 
